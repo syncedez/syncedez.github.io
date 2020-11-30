@@ -571,7 +571,7 @@ box-sizing: border-box;
 	position: absolute;
 }
 
-/*.about .about-content .timeline .circle-dot{
+.about .about-content .timeline .circle-dot{
 	position: absolute;
 	left: 0;
 	left:-7px;
@@ -584,7 +584,7 @@ box-sizing: border-box;
 	background-color: #ec1839;
 
 
-}*/
+}
 .about .about-content .timeline .timeline-date{
 	margin-bottom: 12px;
 
