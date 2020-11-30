@@ -588,6 +588,7 @@ box-sizing: border-box;
 }
 .about .about-content .timeline .timeline-date{
 	margin-bottom: 12px;
+	margin-top:-5px;
 
 	font-size:14px;
 	font-weight: 400;
