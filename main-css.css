@@ -58,9 +58,9 @@ box-sizing: border-box;
 	transform: scale(1.05);
 }
 
-/*.hidden{
+.hidden{
 	display: none!important;
-}*/
+}
 
 .section{
 	padding:0 30px;
@@ -568,23 +568,11 @@ box-sizing: border-box;
 
 	background-color: #ec1839;
 
+
 	position: absolute;
 }
-.about .about-content .timeline .timeline-item::after{
-	content: '';
-    left: 0;
-    left: -7px;
-    top: 0;
-    background-color: #ec1839;
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-}
 
-/*.about .about-content .timeline .circle-dot{
-	position: absolute;
-
+.about .about-content .timeline .circle-dot{
 	left: 0;
 	top: 0;
 	left: -7px;
@@ -593,7 +581,11 @@ box-sizing: border-box;
 
 	background-color: #ec1839;
 
-}*/
+	border-radius: 50%;
+
+	position: absolute;
+
+}
 .about .about-content .timeline .timeline-date{
 	margin-bottom: 12px;
 
