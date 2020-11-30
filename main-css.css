@@ -573,17 +573,6 @@ box-sizing: border-box;
 
 .about .about-content .timeline .circle-dot{
 	position: absolute;
-	left: 0;
-	left:-7px;
-	top:0;
-	height: 15px;
-	width: 15px;
-
-	border-radius: 50%;
-
-	background-color: #ec1839;
-
-
 }
 .about .about-content .timeline .timeline-date{
 	margin-bottom: 12px;
