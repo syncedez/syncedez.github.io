@@ -58,9 +58,9 @@ box-sizing: border-box;
 	transform: scale(1.05);
 }
 
-/*.hidden{
+.hidden{
 	display: none!important;
-}*/
+}
 
 .section{
 	padding:0 30px;
@@ -515,7 +515,7 @@ box-sizing: border-box;
 
 	position: absolute;
 }
-
+/*About Education*/
 .about .about-content .education{
 	margin-top:30px;
 
@@ -523,6 +523,95 @@ box-sizing: border-box;
 	max-width: 50%;
 
 }
+.about .about-content h3.title{
+	font-size:24px;
+	font-weight: 600;
+
+	margin-bottom: 30px;
+
+	color:#302e4d;
+}
+.about .about-content .timeline-box{
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+.about .about-content .timeline{
+	width: 100%;
+	padding: 30px 15px;
+
+	background-color: #fdf9ff;
+	
+	border:1px solid #d4d4e3;
+	border-radius: 10px;
+
+	position: relative;
+}
+.about .about-content .timeline .timeline-item{
+	padding-left: 35px;
+	padding-bottom: 50px;
+
+	position: relative;
+}
+
+.about .about-content .timeline .timeline-item:last-child{
+	padding-bottom: 0px;
+}
+
+.about .about-content .timeline .timeline-item::before{
+	content: '';
+	width: 1px;
+	height: 100%;
+
+	left: 0;
+	top: 0;
+
+	background-color: #ec1839;
+
+	position: absolute;
+}
+
+/*.about .about-content .timeline .circle-dot{
+	position: absolute;
+	left: 0;
+	left:-7px;
+	top:0;
+	height: 15px;
+	width: 15px;
+
+	border-radius: 50%;
+
+	background-color: #ec1839;
+
+
+}*/
+.about .about-content .timeline .timeline-date{
+	margin-bottom: 12px;
+
+	font-size:14px;
+	font-weight: 400;
+	color:#504e70;
+}
+.about .about-content .timeline .timeline-date .fa{
+	margin-right: 5px;
+}
+.about .about-content .timeline .timeline-title{
+	margin-bottom: 15px;
+
+	font-weight: 700;
+	font-size: 18px;
+
+	text-transform: capitalize;
+	color: #302e4d;
+}
+.about .about-content .timeline .timeline-text{
+	margin:0;
+
+	font-size:16px;
+	line-height: 25px;
+	color:#504e70;
+}
+
 
 .about .about-content .experience{
 	margin-top:30px;
@@ -531,3 +620,5 @@ box-sizing: border-box;
 	max-width: 50%;
 
 }
+
+
