@@ -305,7 +305,7 @@ box-sizing: border-box;
 }
 
 
-/*About Section*/
+									/*About Section*/
 .section .container{
 	padding-top:60px;
 	padding-bottom: 70px;
@@ -515,7 +515,7 @@ box-sizing: border-box;
 
 	position: absolute;
 }
-/*About Education*/
+										/*About Education*/
 .about .about-content .education{
 	margin-top:30px;
 
@@ -623,4 +623,81 @@ box-sizing: border-box;
 
 }
 
+								/*Service Section*/
+.service .container{
+	padding-bottom: 40px;
+}
+.service .service-item{
+	max-width: 33.33%;
+	margin-bottom:30px;
+	
+	flex: 0 0 33.33%;
+}
+
+.service .service-item .service-item-inner{
+	padding: 30px 15px;
+
+	background-color: #fdf9ff;
+
+	text-align: center;
+
+	border:1px solid #d4d4e3;
+	border-radius: 10px;
+
+	transition: 0.3s all ease;
+}
+
+.service .service-item .service-item-inner:hover{
+	box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+
+.service .service-item .service-item-inner .icon{
+	margin: 0 auto 30px;
+	height: 60px;
+	width: 60px;
+
+	text-align: center;
+
+	display: block;
+
+	border-radius: 50%;
+
+	transition: 0.3s all ease;
+}
+.service .service-item .service-item-inner .icon .fa{
+	font-size: 40px;
+	line-height: 60px;
+
+	color: #ec1839;
+
+	transition: 0.3s all ease;
+}
+
+.service .service-item .service-item-inner:hover .icon{
+	background-color: #ec1839;
+}
+
+.service .service-item .service-item-inner:hover .icon .fa{
+	font-size: 25px;
+	color:#fff;
+}
+
+.service .service-item .service-item-inner h4{
+	margin-bottom: 15px;
+
+	font-size: 18px;
+	font-weight: 700;
+	color: #302e4d;
+	text-transform: capitalize;
+
+}
+
+.service .service-item .service-item-inner p{
+	margin:0;
+	
+	font-size: 16px;
+	color: #504e70;
+	line-height: 25px;
+
+}
 
