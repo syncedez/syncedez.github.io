@@ -289,8 +289,6 @@ box-sizing: border-box;
 
 	display: inline-block;
 
-	background-color: #ec1839;
-
 	border-radius: 50%;
 
 
@@ -358,8 +356,6 @@ box-sizing: border-box;
 	top:100%;
 	left: 0;
 
-	background-color: #ec1839;
-
 	position: absolute;
 }
 
@@ -373,8 +369,6 @@ box-sizing: border-box;
 
 	top:100%;
 	left: 0;
-
-	background-color: #ec1839;
 
 	position: absolute;
 }
@@ -497,7 +491,6 @@ box-sizing: border-box;
 	height: 100%;
 	top:0;
 	left: 0;
-	background-color: #ec1839;
 
 	border-radius: 4px;
 
@@ -566,9 +559,6 @@ box-sizing: border-box;
 	left:0;
 	top:0;
 
-	background-color: #ec1839;
-
-
 	position: absolute;
 }
 
@@ -578,8 +568,6 @@ box-sizing: border-box;
 	left: -7px;
 	height:15px;
 	width: 15px;
-
-	background-color: #ec1839;
 
 	border-radius: 50%;
 
@@ -632,6 +620,7 @@ box-sizing: border-box;
 	margin-bottom:30px;
 	
 	flex: 0 0 33.33%;
+	display: flex;
 }
 
 .service .service-item .service-item-inner{
@@ -674,7 +663,6 @@ box-sizing: border-box;
 }
 
 .service .service-item .service-item-inner:hover .icon{
-	background-color: #ec1839;
 }
 
 .service .service-item .service-item-inner:hover .icon .fa{
@@ -694,10 +682,274 @@ box-sizing: border-box;
 
 .service .service-item .service-item-inner p{
 	margin:0;
-	
+
 	font-size: 16px;
 	color: #504e70;
 	line-height: 25px;
 
 }
 
+							/*Portfolio Section*/
+/*Responsive Portfolio PC/ Tablet*/
+
+/*Responsive Portfolio END*/
+.portfolio .container{
+	padding-bottom: 40px;
+}
+.portfolio .portfolio-filter{
+	max-width: 100%;
+	margin-bottom: 40px;
+
+	flex:0 0 100%;
+
+
+	text-align: center;
+}
+.portfolio .portfolio-filter button{
+	margin:0 10px;
+	padding-bottom: 2px;
+
+	border: none;
+	border-bottom: 2px solid transparent;
+	background-color: transparent;
+
+	white-space: nowrap;
+
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: capitalize;
+	color:#302e4d;
+
+	cursor: pointer;
+
+	transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-item{
+	max-width: 33.33%;
+	margin-bottom: 30px;
+
+	flex: 0 0 33.33%;
+}
+.portfolio .portfolio-item-inner {
+	border:6px solid #fdf9ff;
+	border-radius: 10px;
+
+	overflow: hidden;
+
+	cursor: pointer;
+
+	position: relative;
+}
+
+.portfolio .portfolio-item-inner .portfolio-img img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.portfolio .portfolio-item .portfolio-info{
+	padding: 30px;
+	height: 100%;
+	width: 100%;
+	
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.8);
+
+	opacity: 0;
+
+	position: absolute;
+	z-index: 1;
+
+	transition: all 0.3s ease;
+}
+.portfolio .portfolio-item-inner:hover .portfolio-info{
+	opacity: 1;
+}
+.portfolio .portfolio-item .portfolio-info h4{
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: capitalize;
+
+	transform: translateX(-20px);
+
+	opacity: 0;
+
+	transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-item-inner:hover .portfolio-info h4{
+	transform: translateX(0px);
+	opacity: 1;
+}
+
+.portfolio .portfolio-item .portfolio-info .icon{
+	height: 40px;
+	width: 40px;
+	bottom: 30px;
+	right: 30px;
+	background-color: #fff;
+
+	border-radius: 50%;
+
+	text-align: center;
+
+	transform: translateX(20px);
+	transition: all 0.3s ease;
+	opacity: 0;
+
+	position: absolute;
+}
+
+.portfolio .portfolio-item-inner:hover .portfolio-info .icon{
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+.portfolio .portfolio-item .portfolio-info .icon .fa{
+	line-height: 40px;
+}
+
+
+
+
+
+							/*Light Box*/
+
+.lightbox{
+	padding: 30px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+
+	display: none;
+	align-items: center;
+	justify-content: center;
+
+	background-color: rgba(0,0,0,0.6);
+
+	position: fixed;
+	z-index: 100;
+
+	cursor: zoom-out;
+}
+.lightbox.open{
+	display: flex;
+}
+
+.lightbox .lightbox-content{
+
+	position: relative;
+	
+	transition: 0.5s all ease;
+
+}
+@keyframes lightboxImage{
+	0%{
+		transform: scale(0.8);
+		
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.lightbox.open .lightbox-content{
+	
+	animation: lightboxImage .5s ease;
+}
+
+.lightbox .lightbox-content img{
+	padding: 30px 0;
+
+	height: auto;
+	width: auto;
+	max-height: 480px;
+	max-width: 100%;
+
+	cursor: pointer;
+
+	display: block;
+
+}
+
+.lightbox .lightbox-content{
+	position: relative;
+}
+
+.lightbox .lightbox-content .lightbox-close{
+	height: 40px;
+	width: 40px;
+	top: -10px;
+	right: 0px;
+
+	font-size: 28px;
+	text-align: right;
+	line-height: 40px;
+	color:#fff;
+
+	position: absolute;
+
+	cursor: pointer;
+}
+
+
+.lightbox .lightbox-content .lightbox-caption{
+	width: 100%;
+	bottom: 0px;
+	left: 0;
+
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+
+	display: flex;
+	justify-content: space-between;
+
+	position: absolute;
+	z-index: -1;
+}
+.lightbox .lightbox-controls .prev-item,
+.lightbox .lightbox-controls .next-item{
+	height: 40px;
+	width: 40px;
+	top: 50%;
+	margin-top:-20px;
+
+	background-color: #fff;
+	text-align: center;
+
+	border-radius: 50%;
+
+	cursor: pointer;
+
+	position: absolute;
+	z-index: 110;
+
+	transform: all 0.3s ease;
+}
+
+.lightbox .lightbox-controls .prev-item:hover,
+.lightbox .lightbox-controls .next-item:hover{
+	transform: scale(1.1);
+}
+
+.lightbox .lightbox-controls .prev-item:active,
+.lightbox .lightbox-controls .next-item:active{
+	transform: scale(1);
+}
+
+.lightbox .lightbox-controls .prev-item{
+	left: 30px;
+}
+
+.lightbox .lightbox-controls .next-item{
+	right: 30px;
+}
+
+.lightbox .lightbox-controls .prev-item .fa,
+.lightbox .lightbox-controls .next-item .fa{
+	font-size: 30px;
+	line-height: 40px;
+}
