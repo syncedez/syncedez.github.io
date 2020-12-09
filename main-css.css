@@ -834,6 +834,8 @@ box-sizing: border-box;
 	border-radius: 10px;
 	border:1px solid #d4d4e3;
 	overflow: hidden;
+	
+	background-color: #fdf9ff;
 }
 .blog .blog-item-inner .blog-img{
 	overflow: hidden;
