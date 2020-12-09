@@ -1,3 +1,5 @@
+
+.blog .blog-item-inner .blog-img .blog-date,
 .home .intro .social-links a,
 .section-title h2::before,
 .section-title h2::after,
@@ -11,6 +13,7 @@
 .portfolio .portfolio-filter button.active,
 .portfolio .portfolio-item .portfolio-info .icon .fa,
 .lightbox .lightbox-controls .prev-item .fa,
+.blog .blog-item-inner .blog-info .blog-tags a,
 .lightbox .lightbox-controls .next-item .fa{
 	color:#ec1839;
 }
