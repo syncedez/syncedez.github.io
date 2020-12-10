@@ -8,7 +8,9 @@ body{
 	font-size:16px;
 	font-family: 'Lato', sans-serif;
 }
-
+input,textarea,select{
+	font-family: 'Rubik', sans-serif;
+}
 *{
 	margin:0;
 	padding:0;
@@ -47,11 +49,13 @@ box-sizing: border-box;
 	color:white;
 
 	border-radius: 40px;
-
+	border:none;
 	display: inline-block;
 	white-space:nowrap;
 
 	transition: all 0.3s ease;
+
+	cursor: pointer;
 }
 
 .btn:hover{
@@ -908,6 +912,132 @@ box-sizing: border-box;
 
 /*Blog END*/
 
+
+/*Contact Section*/
+.contact .container{
+	
+}
+
+.contact .contact-info-item{
+	margin-bottom: 40px;
+
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+
+	text-align: center;
+}
+
+.contact .contact-info-item .contact-info-item-inner{
+	padding-top: 15px;
+	padding-bottom:15px;
+	width: 100%;
+
+	background-color: #fdf9ff;
+	border-radius: 15px;
+
+	transition: 0.125s all ease;
+}
+
+.contact .contact-info-item .contact-info-item-inner:hover{
+	box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+
+.contact .contact-info-item .contact-info-item-inner .icon{
+	margin: 0px auto 30px;
+
+	height: 60px;
+	width: 60px;
+
+	text-align: center;
+
+	display: block;
+
+	border-radius: 50%;
+
+	transition: 0.3s all ease;
+}
+
+.contact .contact-info-item .contact-info-item-inner:hover .icon .fa{
+	color: #fff;
+	font-size: 25px;
+	
+}
+
+/*.contact .contact-info-item .icon{
+	display: inline-block;
+	margin-bottom: 15px;
+}*/
+.contact .contact-info-item .icon .fa{
+	line-height: 60px;
+	font-size: 40px;
+	transition: 0.3s all ease;
+}
+.contact .contact-info-item h4{
+	margin: 15px 0 5px;
+
+	color:#302e4d;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.contact .contact-info-item p{
+	margin:0;
+	color:#504e70;
+	font-weight: 400;
+
+}
+
+.contact .contact-form{
+	flex:0 0 100%;
+	max-width: 100%;
+}
+
+.contact .contact-form .btn{
+	height: 50px;
+	padding:0 50px;
+}
+
+.contact .contact-form .col-6{
+	max-width: 50%;
+	flex:0 0 50%;
+}
+
+.contact .contact-form .col-12{
+	flex:0 0 100%;
+	max-width: 100%;
+}
+
+.contact .contact-form .form-item{
+	margin-bottom: 30px;
+}
+
+.contact .contact-form .form-item .form-control{
+	width: 100%;
+	height: 50px;
+	padding:10px 25px;
+
+	border-radius: 25px;
+	border:1px solid #d4d4e3;
+
+	font-size: 16px;
+	color: #504e70;
+
+	transition: 0.125s all ease;
+}
+
+.contact .contact-form .form-item .form-control:focus,
+.contact .contact-form .form-item .form-control:hover{
+	box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+
+.contact .contact-form .form-item textarea.form-control{
+	height: 140px;
+}
+
+
+
+/*Contact Section END*/
 
 
 
