@@ -740,7 +740,7 @@ box-sizing: border-box;
 	border:6px solid #fdf9ff;
 	border-radius: 10px;
 
-	height: 340px;
+	height: 440px;
 
 	overflow: hidden;
 
@@ -751,7 +751,7 @@ box-sizing: border-box;
 
 .portfolio .portfolio-item-inner .portfolio-img img{
 	width: 100%;
-
+	height: 100%;
 	display: block;
 
 	position: absolute;
