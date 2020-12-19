@@ -7,7 +7,7 @@ const	filterContainer = document.querySelector(".portfolio-filter")
 		totalFilterBtn = filterBtns.length;
 		portfolioItems = document.querySelectorAll(".portfolio-item"),
 		totalPortfolioItem = portfolioItems.length;
-		console.log(totalPortfolioItem)
+		
 
 		for(let i =0; i<totalFilterBtn;i++){
 			filterBtns[i].addEventListener("click",function(){
@@ -87,3 +87,13 @@ const	filterContainer = document.querySelector(".portfolio-filter")
 				toggleLightbox();
 			}
 		})
+
+
+
+// Click Toggler Nav Menu
+
+document.querySelector(".nav-toggler").addEventListener("click",()=>{
+	document.querySelector(".aside").classList.toggle("open")
+})
+
+

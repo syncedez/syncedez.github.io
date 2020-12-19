@@ -15,11 +15,22 @@
 	<!-- Responsive -->
 
 	<link rel="stylesheet" type="text/css" href="main-css.css">
-	<link rel="stylesheet" type="text/css" href="base-css.css">
+	<link rel="stylesheet" 	title="pink" 	type="text/css" href="base-css.css"
+	
 
 	<script type="text/javascript" href="main-js.js"></script>
+
+	<!-- Live Style Switcher  -->
+	<link rel="stylesheet"	class="alternate-style" 	title="pink" 	type="text/css" href="base-css.css"		disabled> <!-- pink color -->
+	<link rel="stylesheet"	class="alternate-style"		title="yellow" 	type="text/css" href="yellowcolor.css"	disabled>
+	<link rel="stylesheet"	class="alternate-style"		title="green" 	type="text/css" href="greencolor.css"	disabled>
+	<link rel="stylesheet"	class="alternate-style"		title="orange" 	type="text/css" href="orangecolor.css"	disabled>
+	<link rel="stylesheet"	class="alternate-style"		title="blue" 	type="text/css" href="bluecolor.css"	disabled>
+
+	<link rel="stylesheet" type="text/css" href="styleSwitcher.css">
 </head>
 <body>
+
 	<!-- Main container -->
 	<div class="main-container">
 		<!-- Aside -->
@@ -29,7 +40,7 @@
 				<a href="#">Synthos</a>
 			</div>
 			<!-- Nav Toggler Btn -->
-				<div class="nav-toggler">
+				<div class="nav-toggler "> 
 					<span></span>
 				</div>
 			<!-- Nav Toggler Btn End -->
@@ -707,8 +718,45 @@
 	</div>
 <!-- Lightbox END -->
 
+<!-- Live Style Switcher -->
+	<div class="style-switcher ">
+		<div class="toggle-style-switcher">
+			<i class="fa fa-cog fa-spin"></i>
+		</div>
+		<h5>Style Switcher</h5>
+		<ul>
+			<li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839" onclick="setActiveStyle('pink')"></a></li>
+
+			<li><a href="javascript:void(0);" title="blue" style="background-color: #2196f3" onclick="setActiveStyle('blue')"></a></li>
+
+			<li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f" onclick="setActiveStyle('orange')"></a></li>
+
+			<li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400" onclick="setActiveStyle('yellow')"></a></li>
+
+			<li><a href="javascript:void(0);" title="green" style="background-color: #72b626" onclick="setActiveStyle('green')"></a></li>
+		</ul>
+
+		<h5>Body Skin</h5>
+		<label>
+			<input class="body-skin" type="radio" name="body-style" value="light" checked="true">Light
+		</label>
+
+		<label>
+			<input class="body-skin" type="radio" name="body-style" value="dark">Dark
+		</label>
+	</div>
+
+
+
+<!-- Live Style Switcher END -->
+
 <!-- Template JS -->
 <script type="text/javascript" src="js/script.js"></script>
 <!-- Template JS END-->
+
+
+<!-- Live Style JS -->
+<script type="text/javascript" src="js/styleSwitcher.js"></script>
+<!-- Live Style JS END -->
 </body>
 </html>

@@ -1,14 +1,13 @@
 
 .aside .logo a::before{
-	border-top:4px solid #ec1839;
-	border-left:4px solid #ec1839;
+	border-top:4px solid #ffb400;
+	border-left:4px solid #ffb400;
 }
 
 .aside .logo a::after{
-	border-bottom:4px solid #ec1839;
-	border-right:4px solid #ec1839;
+	border-bottom:4px solid #ffb400;
+	border-right:4px solid #ffb400;
 }
-
 .aside .nav-toggler span,
 .aside .nav-toggler span::before,
 .aside .nav-toggler span::after,
@@ -22,7 +21,7 @@
 .about .about-content .timeline .timeline-item::before,
 .about .about-content .timeline .circle-dot,
 .service .service-item .service-item-inner:hover .icon{
-	background-color: #ec1839;
+	background-color: #ffb400;
 }
 body.dark .aside .nav li a:hover,
 body.dark .aside .nav li a.active,
@@ -38,9 +37,9 @@ body.dark .portfolio .portfolio-filter button.active,
 body.dark .blog .blog-item-inner .blog-info .blog-tags a,
 .blog .blog-item-inner .blog-info .blog-tags a,
 .lightbox .lightbox-controls .next-item .fa{
-	color:#ec1839;
+	color:#ffb400;
 }
 body.dark .portfolio .portfolio-filter button.active,
 .portfolio .portfolio-filter button.active{
-	border-color: #ec1839;
+	border-color: #ffb400;
 }
