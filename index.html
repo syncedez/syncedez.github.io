@@ -31,6 +31,16 @@
 </head>
 <body>
 
+
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="loader">
+			
+		</div>
+	</div>
+
+	<!-- Preloader END-->
+	
 	<!-- Main container -->
 	<div class="main-container">
 		<!-- Aside -->
@@ -48,27 +58,27 @@
 			<!-- Nav Menu -->
 			<ul class="nav">
 				<li>
-					<a href="#" class="active">
+					<a href="#home" class="active">
 						<i class="fa fa-home" aria-hidden="true"></i> Home 
 					</a>
 				</li>
 				<li>
-					<a href="#"><i class="fa fa-user" aria-hidden="true"></i> About </a>
+					<a href="#about"><i class="fa fa-user" aria-hidden="true"></i> About </a>
 				</li>
 				<li>
-					<a href="#"><i class="fa fa-list" aria-hidden="true"></i> Service 
+					<a href="#services"><i class="fa fa-list" aria-hidden="true"></i> Services 
 					</a>
 				</li>
 				<li>
-					<a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i> Portfolio 
+					<a href="#portfolio"><i class="fa fa-briefcase" aria-hidden="true"></i> Portfolio 
 					</a>
 				</li>
 				<li>
-					<a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Blog 
+					<a href="#blog"><i class="fa fa-envelope" aria-hidden="true"></i> Blog 
 					</a>
 				</li>
 				<li>
-					<a href="#"><i class="fa fa-comments" aria-hidden="true"></i> Contact 
+					<a href="#contact"><i class="fa fa-comments" aria-hidden="true"></i> Contact 
 					</a>
 				</li>
 
@@ -86,7 +96,7 @@
 		<!-- Main Content -->
 		<div class="main-content">
 			<!-- Home Section -->
-			<section class="home section ">
+			<section class="home section active" id="home">
 				<div class="container">
 					<div class="intro">
 						<img src="./intro.jpg" alt="profile" class="shadow-dark">
@@ -104,7 +114,7 @@
 			<!-- Home Section End -->
 
 			<!-- About Section -->
-			<section class="about section ">
+			<section class="about section " id="about">
 				<!-- Container  -->
 				<div class="container">
 					<div class="row">
@@ -163,7 +173,7 @@
 									<div class="row">
 										<div class="buttons padd-15" >
 											<a href="#" class="btn">Download CV</a>
-											<a href="#" class="btn" >Hire me</a>
+											<a href="#contact" data-section-index="1" class="btn hire-me" >Hire me</a>
 										</div>
 									</div>
 								</div>
@@ -315,7 +325,7 @@
 			<!-- About Section End -->
 
 			<!-- Service Section -->
-			<section class="service section ">
+			<section class="service section " id="services">
 				<!-- Container -->
 				<div class="container">
 
@@ -394,7 +404,7 @@
 
 
 			<!-- Portfolio -->
-			<section class="portfolio section ">
+			<section class="portfolio section " id="portfolio">
 				<!-- Container -->
 				<div class="container">
 					<div class="row">
@@ -531,7 +541,7 @@
 			<!-- Portfolio END -->
 
 			<!-- Blog Section -->
-			<section class="blog section  ">
+			<section class="blog section  " id="blog">
 				<!-- Container -->
 				<div class="container">
 					<div class="row">
@@ -601,7 +611,7 @@
 			<!-- Blog Section END  -->
 
 			<!-- Contact Section -->
-			<section class="contact section  ">
+			<section class="contact section  " id = "contact">
 				<!-- Container -->
 				<div class="container">
 					<div class="row">
