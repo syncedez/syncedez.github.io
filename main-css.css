@@ -357,6 +357,8 @@ box-sizing: border-box;
 
 	display: inline-block;
 
+	object-fit: cover;
+
 	border:8px solid #ffffff;
 }
 
