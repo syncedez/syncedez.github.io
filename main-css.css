@@ -856,6 +856,8 @@ box-sizing: border-box;
 	height: 100%;
 	display: block;
 
+	object-fit: cover;
+
 	position: absolute;
 }
 .portfolio .portfolio-item .portfolio-info{

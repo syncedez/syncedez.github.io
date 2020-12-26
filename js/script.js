@@ -99,9 +99,9 @@ const	filterContainer = document.querySelector(".portfolio-filter")
 // Click Toggler Nav Menu
 	const navTogglerBtn = document.querySelector(".nav-toggler"),
 		  aside = document.querySelector(".aside");	
-
+		  	console.log(navTogglerBtn);
 	navTogglerBtn.addEventListener("click",asideSectionTogglerBtn)
-	
+		
 		// asideSectionTogglerBtn();
 
 
@@ -114,6 +114,7 @@ const	filterContainer = document.querySelector(".portfolio-filter")
 		}
 
 	}
+
 
 
 //Aside Navbar
